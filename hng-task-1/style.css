@@ -1,3 +1,57 @@
-/* 
- Project generated with startease - https: //startease.vercel.app
-*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+:root {
+  background: #e3d5ab;
+  color: #1f1f20;
+}
+body,
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 3em;
+}
+img:first-of-type {
+  width: 6em;
+  height: 6em;
+}
+#banner-pic {
+  width: clamp(6em, 30%, 30em);
+  height: clamp(5rem, 30%, 25em);
+  /* box-shadow: 18px 10px 5px 0px rgba(0,0,0,0.75); */
+}
+div > span {
+  background: #c8b161;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  font-size: 1.2em;
+}
+.personal,
+.plans {
+  border: 0.2em solid black;
+  border-radius: 0.5em;
+  position: relative;
+  width: 80%;
+  justify-content: start;
+  text-align: left;
+  padding: 2em 0.5em 0.5em;
+  margin: 2em;
+}
+section {
+  width: 100%;
+}
+p {
+  margin: 0.6em;
+  font-size: 1.4em;
+}
