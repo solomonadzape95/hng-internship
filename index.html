@@ -13,20 +13,20 @@
     <div class="banner">
       <img data-testid="slackProfilePicture" src="assets/wave2.gif" />
       <h1>Hi there, I'm <span data-testid="slackDisplayName">Solomon</span></h1>
-      <img id="banner-pic" data-testid="slackDisplayName" src="public/avatar.jpeg" />
+      <img id="banner-pic" data-testid="slackProfilePicture" src="assets/avatar.jpeg" />
     </div>
     <div class="personal">
       <span>Here's some more info about me</span>
       <section>
         <p>🧑🏾 <span>Name:</span> Adzape Solomon Chiater</p>
-        <p>📧 <span>Email:</span> adzapec@gmail.com</p>
+        <p data-testid="slackEmail">📧 <span>Email:</span> adzapec@gmail.com</p>
         <p>💻 <span>Niche:</span> Frontend Developer</p>
         <p>
           ⏰ <span>Current Time:</span>
           <span id="time" data-testid="currentTimeUTC"></span>
         </p>
         <p>
-          📆 <span>Current Date:</span>
+          📆 <span>Current Day:</span>
           <span id="date" data-testid="currentDay"></span>
         </p>
       </section>
@@ -35,21 +35,21 @@
       <span>Also in the future, I'd like to...</span>
       <section>
         <p>
-          📖 Learn as much as I can on any topic, but mostly STEM related topics
+          📖 Get basic knowledge of as many tech niches as I can
         </p>
         <p>🙏 Get closer to God</p>
         <p>🧱 Build at least 15 projects annually</p>
-        <p>✈️ Maybe leave the country</p>
-        <p>💰 Become financially free!!</p>
+        <p>✈️ Work for a foreign company</p>
+        <p>💰 Become part of the 6-figure earners</p>
         <p>🚴 Learn how to ride a bike</p>
       </section>
     </div>
     <footer>
       Thanks for staying,check out the cool links below:
       <span>
-      <a href="http://hng.tech/learn"><button>HNG Learning</a></button> 
-        <button><a href="http://keyword.dog/">Keyword DOG</a></button>
-        <button><a href="http://scrapeanyweb.site/">Scrape Any Web</a></button></span
+      <a href="http://hng.tech/learn" data-testid="hngLink"><button>HNG Learning</a></button> 
+        <button><a href="http://keyword.dog/" data-testid="keyword">Keyword DOG</a></button>
+        <button><a href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink">Scrape Any Web</a></button></span
       >
       <p class="attribution">&copy; <span class="year"></span> Solenoid. All Rights Reserved.</p>
     </footer>

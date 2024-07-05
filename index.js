@@ -2,25 +2,6 @@ const bannerPic = document.getElementById("banner-pic");
 const timeDisplayEl = document.getElementById("time");
 const dateDisplayEl = document.getElementById("date");
 
-const p1 = bannerPic.offsetLeft;
-const p2 = bannerPic.offsetRight;
-const width = bannerPic.width;
-let posX, posY;
-
-function isMe(x) {
-  let p = ((x - p1) / width) * 100;
-  bannerPic.title =
-    p <= 34
-      ? "Yes, You found me!!"
-      : p >= 67
-      ? "No, thats Godswill"
-      : "No, thats Godsvictory";
-}
-
-bannerPic.addEventListener("mouseenter", () => {
-  isMe(posX);
-});
-
 window.addEventListener("mousemove", (e) => {
   posX = e.clientX;
   posY = e.clientY;
@@ -41,7 +22,15 @@ const months = [
   "November",
   "December",
 ];
-
+const days = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
 function displayDateTime() {
   setInterval(() => {
     const date = new Date();
@@ -57,9 +46,9 @@ function displayDateTime() {
     }${curUTCMinute}:${curUTCSecond < 10 ? "0" : ""}${curUTCSecond}`;
 
     const curDate = `${curUTCDay} ${months[curUTCMonth - 1]}, ${curUTCYear}`;
-    document.querySelector('.year').textContent = curUTCYear;
+    document.querySelector(".year").textContent = curUTCYear;
 
-    dateDisplayEl.textContent = curDate;
+    dateDisplayEl.textContent = days[curUTCDay - 1];
     timeDisplayEl.textContent = curTime;
   }, 1000);
 }
