@@ -11,8 +11,8 @@
   <!--  -->
   <body>
     <div class="banner">
-      <img src="public/wave2.gif" />
-      <h1>Hi there, I'm Solomon</h1>
+      <img data-testid="slackProfilePicture" src="public/wave2.gif" />
+      <h1>Hi there, I'm <span data-testid="slackDisplayName">Solomon</span></h1>
       <img id="banner-pic" src="public/banner-pic.jpeg" />
       <p>🕵️ Try finding me in the picture above</p>
     </div>
@@ -22,6 +22,14 @@
         <p>🧑🏾 <span>Name:</span> Adzape Solomon Chiater</p>
         <p>📧 <span>Email:</span> adzapec@gmail.com</p>
         <p>💻 <span>Niche:</span> Frontend Developer</p>
+        <p>
+          ⏰ <span>Current Time:</span>
+          <span id="time" data-testid="currentTimeUTC"></span>
+        </p>
+        <p>
+          📆 <span>Current Date:</span>
+          <span id="date" data-testid="currentDay"></span>
+        </p>
       </section>
     </div>
     <div class="plans">
@@ -37,5 +45,14 @@
         <p>🚴 Learn how to ride a bike</p>
       </section>
     </div>
+    <footer>
+      Thanks for staying,check out the cool links below:
+      <span>
+      <a href="http://hng.tech/learn"><button>HNG Learning</a></button> 
+        <button><a href="http://keyword.dog/">Keyword DOG</a></button>
+        <button><a href="http://scrapeanyweb.site/">Scrape Any Web</a></button></span
+      >
+      <p class="attribution">&copy; <span class="year"></span> Solomon. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

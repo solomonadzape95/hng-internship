@@ -16,6 +16,26 @@ div {
   justify-content: center;
   align-items: center;
 }
+a {
+  text-decoration: none;
+  color: #1f1f20;
+}
+button {
+  padding: 1em 2em;
+  font-size: 1em;
+  background: #c8b161;
+  border: none;
+}
+footer {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  box-shadow: 0.5px 0.5px 0.5px 0px rgba(0, 0, 0, 0.75);
+}
 h1 {
   font-size: 3em;
 }
@@ -60,4 +80,8 @@ p {
   h1 {
     font-size: 2.5rem;
   }
+}
+
+.attribution {
+    font-size: 14px;
 }
